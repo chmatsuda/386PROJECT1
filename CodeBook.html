@@ -125,10 +125,179 @@ $(document).ready(function () {
 </div>
 
 
-<p>Description: This code book describes each of the variables, the data, and any transformations or work that you performed to clean up the data</p>
+<p>Description: This code book describes each of the variables, the data, and any transformations or work that we performed to clean up the data</p>
 <div id="task-1" class="section level2">
 <h2>Task 1</h2>
-<p>Here is the description for task 1.</p>
+<table style="width:94%;">
+<colgroup>
+<col width="33%"></col>
+<col width="61%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>y_tr</td>
+<td>holds the orignal y training data</td>
+</tr>
+<tr class="even">
+<td>x_tr</td>
+<td>holds the orignal x training data</td>
+</tr>
+<tr class="odd">
+<td>y_te</td>
+<td>holds the orignal y testing data</td>
+</tr>
+<tr class="even">
+<td>x_te</td>
+<td>holds the orignal x testing data</td>
+</tr>
+<tr class="odd">
+<td>sub_tr</td>
+<td>holds the subject numbers for training data</td>
+</tr>
+<tr class="even">
+<td>sub_te</td>
+<td>holds the subject numbers for testing data</td>
+</tr>
+<tr class="odd">
+<td>variables</td>
+<td>holds all of the original variable names</td>
+</tr>
+<tr class="even">
+<td>ytrain</td>
+<td>holds original y training data converted to a table data frame</td>
+</tr>
+<tr class="odd">
+<td>xtrain</td>
+<td>holds original x training data converted to a table data frame</td>
+</tr>
+<tr class="even">
+<td>ytest</td>
+<td>holds original y testing data converted to a table data frame</td>
+</tr>
+<tr class="odd">
+<td>xtest</td>
+<td>holds original x testing data converted to a table data frame</td>
+</tr>
+<tr class="even">
+<td>sub_train</td>
+<td>holds original subject training data converted to table data frame</td>
+</tr>
+<tr class="odd">
+<td>sub_test</td>
+<td>holds original subject testing data converted to table data frame</td>
+</tr>
+<tr class="even">
+<td>xdata</td>
+<td>holds x training data bound on top of x testing data</td>
+</tr>
+<tr class="odd">
+<td>new_x</td>
+<td>subset of xdata with just mean and standard deviation measurements</td>
+</tr>
+<tr class="even">
+<td>ydata</td>
+<td>holds y training data bound on top of y testing data</td>
+</tr>
+<tr class="odd">
+<td>complete_data</td>
+<td>holds both y data (both training and testing) bound to x data (both training and testing)</td>
+</tr>
+<tr class="even">
+<td>one:thirty</td>
+<td>subsets of complete_data for each subject number</td>
+</tr>
+<tr class="odd">
+<td>walking(i), for i=1:30</td>
+<td>subsets of all walking observations for each subject</td>
+</tr>
+<tr class="even">
+<td>walking(i)_means</td>
+<td>array holding column means each subject number and all of its “walking” observations</td>
+</tr>
+<tr class="odd">
+<td>walking_up(i), for i=1:30</td>
+<td>subsets of all walking_upstairs observations for each subject</td>
+</tr>
+<tr class="even">
+<td>walking_up(i)_means</td>
+<td>array holding column means each subject number and all of its “walking_upstairs” observations</td>
+</tr>
+<tr class="odd">
+<td>walking_down(i), for i=1:30</td>
+<td>subsets of all walking_downstairs observations for each subject</td>
+</tr>
+<tr class="even">
+<td>walking_down(i)_means</td>
+<td>array holding column means each subject number and all of its “walking_downstairs” observations</td>
+</tr>
+<tr class="odd">
+<td>sitting(i), for i=1:30</td>
+<td>subsets of all sitting observations for each subject</td>
+</tr>
+<tr class="even">
+<td>sitting(i)_means</td>
+<td>array holding column means each subject number and all of its “sitting” observations</td>
+</tr>
+<tr class="odd">
+<td>standing(i), for i=1:30</td>
+<td>subsets of all standing observations for each subject</td>
+</tr>
+<tr class="even">
+<td>standing(i)_means</td>
+<td>array holding column means each subject number and all of its “standing” observations</td>
+</tr>
+<tr class="odd">
+<td>laying(i), for i=1:30</td>
+<td>subsets of all laying observations for each subject</td>
+</tr>
+<tr class="even">
+<td>laying(i)_means</td>
+<td>array holding column means each subject number and all of its “laying” observations</td>
+</tr>
+<tr class="odd">
+<td>sub(i) for i=1:30</td>
+<td>data frames containing observation means for every activity for each subject</td>
+</tr>
+<tr class="even">
+<td>tidy</td>
+<td>one data set that binds together each of the 30 sub(i) datasets with rbind</td>
+</tr>
+<tr class="odd">
+<td>tidy2</td>
+<td>same as tidy, but converted to table data frame with tbl_df()</td>
+</tr>
+<tr class="even">
+<td>subject_names</td>
+<td>array of all subject names as is appropriate for the final dataset.</td>
+</tr>
+<tr class="odd">
+<td>subs_1</td>
+<td>converted the “subject_names” array into a data frame with tbl_df</td>
+</tr>
+<tr class="even">
+<td>acitivty_names</td>
+<td>array of all activity names as is appropriate for the final dataset.</td>
+</tr>
+<tr class="odd">
+<td>act_names</td>
+<td>converted the “activity_names” array into a data frame with tbl_df</td>
+</tr>
+<tr class="even">
+<td>tidy1</td>
+<td>final data set created by binding subs_1, act_names, and tidy2 with cbind</td>
+</tr>
+<tr class="odd">
+<td>tidy1.txt</td>
+<td>converted tidy1 data frame into .txt file</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="task-2" class="section level2">
 <h2>Task 2</h2>
@@ -168,10 +337,24 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
+<td>Plant ID</td>
+<td>PlantID</td>
+<td>Plant Identification No.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Years</td>
+<td>Years</td>
+<td>Years</td>
+<td>Years</td>
+<td>Years</td>
+</tr>
+<tr class="odd">
 <td>Electricity</td>
 <td>Electricity</td>
 <td>Net electrical generation</td>
-<td>kWh (millions)</td>
+<td>Wh</td>
 <td>Daily MWh</td>
 </tr>
 <tr class="even">
@@ -192,8 +375,8 @@ $(document).ready(function () {
 <td>Capital Stock</td>
 <td>CapStock</td>
 <td>Input</td>
-<td>$ (millions, 1973)</td>
-<td>$ (millions, 2017)</td>
+<td>$ (1973)</td>
+<td>$ (2017)</td>
 </tr>
 <tr class="odd">
 <td>Employees</td>
@@ -206,21 +389,21 @@ $(document).ready(function () {
 <td>Heat Content Coal</td>
 <td>HC_Coal</td>
 <td>Input</td>
-<td>Btu (billions)</td>
+<td>Btu</td>
 <td>Daily MWh</td>
 </tr>
 <tr class="odd">
 <td>Heat Content Oil</td>
 <td>HC_Oil</td>
 <td>Input</td>
-<td>Btu (billions)</td>
+<td>Btu</td>
 <td>Daily MWh</td>
 </tr>
 <tr class="even">
 <td>Heat Content Gas</td>
 <td>HC_Gas</td>
 <td>Input</td>
-<td>Btu (billions)</td>
+<td>Btu</td>
 <td>Daily MWh</td>
 </tr>
 <tr class="odd">
