@@ -71,14 +71,14 @@ Variable     | Variable Name   | Description                |Units (Initial)  | 
 -------------| ----------------|----------------------------|-----------------|--------------
 Plant ID     | PlantID         | Plant Identification No.   |                 |
 Years        | Years           | Years                      |Years                 |Years
-Electricity  | Electricity     | Net electrical generation    |Wh             |  Daily MWh
-SO2          | SO2             | Bad output sulfur dioxide    |short tons|      Daily short tons
-NOX          | NOX             | Bad output nitrogen oxides   |short tons|      Daily short tons
+Electricity  | Electricity     | Net electrical generation    |Yearly Wh             |  Daily MWh
+SO2          | SO2             | Bad output sulfur dioxide    |Yearly short tons|      Daily short tons
+NOX          | NOX             | Bad output nitrogen oxides   |Yearly short tons|      Daily short tons
 Capital Stock| CapStock        | Input                        |$ (1973)| $ (2017)
 Employees    | Employees       |Input                         |Workers|           Workers
-Heat Content Coal | HC_Coal    |Input                         |Btu |    Daily MWh
-Heat Content Oil | HC_Oil      |Input                         |Btu|Daily MWh
-Heat Content Gas | HC_Gas      |Input                         |Btu|Daily MWh
+Heat Content Coal | HC_Coal    |Input                         |Yearly Btu |    Daily MWh
+Heat Content Oil | HC_Oil      |Input                         |Yearly Btu|Daily MWh
+Heat Content Gas | HC_Gas      |Input                         |Yearly Btu|Daily MWh
 Phase 1 CAA | Phase1           |Whether or not Phase 1 of CAA has been announced | Unitless (1= Announced, 0 = Not announced)|Unitless (1= Announced, 0 = Not announced)
 
 ##### Conversions:  
